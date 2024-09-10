@@ -1,6 +1,5 @@
-
 .header{
-    height: 293px;
+    min-height: 293px;
     width:1100px;
     align-content:baseline;  
 }
@@ -9,19 +8,17 @@
     display: flex;
     align-items: center;
     width: 1052px;
-    height: 105px;
     margin-top: 92px;
     margin-left: 24px;
     margin-right: 24px;   
 }
 
 .header-link-list{
-    list-style:none;
     display:flex;
     align-content: center;
     width: 391.48px;
     height: 22px;
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
@@ -29,11 +26,15 @@
     margin-left: 27px;   
 }
 
-.header-links-list-item1-no-bullit{
+.header-links-list-item-no-bullet{
+    list-style:none;
+}
+
+.header-links-list-item-no-bullet:nth-child(1){
     width: 67px;   
 }
 
-.header-links-list-item2-no-bullit{
+.header-links-list-item-no-bullet:nth-child(2){
     list-style: circle;
     width: 169px;
     margin-left: 29px;
@@ -41,7 +42,7 @@
     text-underline-offset: 4px;  
 }
 
-.header-links-list-item3-no-bullit{
+.header-links-list-item-no-bullet:nth-child(3){
     list-style: circle;
     width: 122px; 
     margin-left: 25px;  
@@ -62,11 +63,11 @@
 
 .header-contacts{
     width: 240.52px;
-    height: 98px;
+    min-height: 98px;
     margin-top: 0px;
     margin-left:3px;
     padding-top: 3px; 
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-weight: 400;
     line-height: 24.3px;  
     letter-spacing: 1px; /*Space between characters*/   
@@ -87,12 +88,15 @@
 .cover{
     position: relative;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background-image: url('../images/cover.jpg');
     background-position: center;
     z-index: 0;  
     display: flex;
-    justify-content: center;   
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 165px;
+    padding-right: 50px;
 }
 
 .overlay{
@@ -103,62 +107,35 @@
 }
  
 .cover-title{
-    position: absolute;
     width: 1000px;
-    height: 355px;
-    z-index: 2;
+    min-height: 355px;
+    position: absolute;
     text-transform: uppercase;
-    margin: 165px 50px 237px 50px;;
+    font-family: "Raleway", serif; 
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.6em;
+    color: #fff;
+    z-index: 2;
 }
 
 .aligned-text{
-    top: 0;
-    left: 0;
-    width: 316px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display:block;
-    font-family: Raleway;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 115px;
-    letter-spacing: 0.6em;
-    text-align: left;
-    color: #fff; 
+    display: block;
+    text-align: start;
 }
 
 .aligned-text-center{
-    position: absolute;
-    top: 50%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    width: 369px;
-    height: 100px;
-    font-family: Raleway;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 115px;
-    letter-spacing: 0.6em;
-    text-align: left;
-    margin-right:20px;
-    color: #fff;  
+    display: block;
+    text-align: center;
+    margin-top:13px;
 }
 
 .aligned-text-right{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 417px;
-    height: 100px;
-    font-family: Raleway;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 115px;
-    letter-spacing: 0.6em;
-    margin-bottom: 8px; 
-    color: #fff;  
+    display:block;
+    text-align: end;  
+    padding-left: 585px; 
+    padding-top: 5px;
 }
 
 .letter-space-no-space{
@@ -170,27 +147,23 @@
 }
 
 .cover-description{
-    margin-left: 0;
     width: 972px;
     height: 55px;
     display:flex;
-    justify-content: center;
     align-self: self-end; 
     margin-bottom: 51px;
-    display:flex;
     justify-content: space-between;
     z-index:3;
     margin-left: 28px;
 }
 
 .cover-description-text{
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
     align-self: center;
-    font-family: Raleway;
     word-spacing:19px;
     margin-top: 5px;
     text-transform: uppercase;
@@ -201,7 +174,7 @@
     background: transparent;
     width: 256px;
     height: 51px;
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 25.83px;
@@ -215,7 +188,7 @@
 
 .lots{
     width: 1052px;
-    height: 692px;
+    min-height: 692px;
     margin-top: 179px;
     margin-left: 24px;
     margin-right: 24px;
@@ -223,10 +196,10 @@
 
 .lots-heading{
     width: 121px;
-    height: 47px;
+    min-height: 47px;
     margin-left: 40px;
     margin-bottom: 27px;
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -250,6 +223,10 @@
     flex-direction: column;
     justify-content: space-between; /* Push title to top and text to bottom */
     position:relative;
+}
+
+.card-link{
+    text-decoration: none;
 }
 
 .card-type-film{
@@ -297,8 +274,8 @@
 
 .lots-look-more-link {
     width: 192px;
-    height: 25px;
-    font-family: Raleway;
+    min-height: 25px;
+    font-family: "Raleway", serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 23.48px;
@@ -308,7 +285,7 @@
 
 .about{
    width: 1052px;
-   height: 595px;
+   min-height: 595px;
    margin-top: 146px;
    margin-right: 24px;
    margin-left: 24px;
@@ -347,8 +324,8 @@
 
 .about-title{
     width: 291px;
-    height: 47px;
-    font-family: Raleway;
+    min-height: 47px;
+    font-family: "Raleway", serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -368,7 +345,7 @@
 }
 
 .about-text-font{
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -377,8 +354,8 @@
 
 .footer{
     width:1000px;
-    height:98px;
-    margin-top: 180px;
+    min-height:98px;
+    margin-top: 165px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 88px;
@@ -402,7 +379,7 @@
 
 .footer-social-list{
     width: 240px ;
-    height:48px;
+    min-height:48px;
     display:flex;
     justify-content:space-between ;
 }
